@@ -1,0 +1,27 @@
+@use "abstract/colors";
+@use "abstract/var";
+
+@use "base/resets";
+
+
+@use "components/faqComp";
+
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--nutral-500);
+    align-items: center;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.content>:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
